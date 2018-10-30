@@ -18,17 +18,17 @@ function changeImg(){
     }
     console.log(currentNo);
 }
+var timer=window.setInterval(changeImg,1000);
 var imagesG=document.querySelector('#images');
 console.log(imagesG);
 function starChange(){
-    timer=window.setInterval(changeImg,1000)
+    timer=window.setInterval(changeImg,1000);
 }
 function stopChange(){
     window.clearInterval(timer);
 }
 imagesG.addEventListener('mouseover',stopChange);
 imagesG.addEventListener('mouseout',starChange);
-
 
 
 
