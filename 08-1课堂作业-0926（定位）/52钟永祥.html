@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style >
+               div,
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .zyx {
+            height: 36px;
+            border-bottom: 2px blue solid;
+            text-align: left;
+
+        }
+
+        .zyx .title {
+            font: 16px/26px "Microsoft YaHei", "SimHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+        }
+
+        .zyx .title span {
+            position: relative;
+            bottom: -3px;
+            float: left;
+            height: 36px;
+            line-height: 30px;
+            color: #333;
+            margin-right: 30px;
+            cursor: pointer;
+        }
+
+
+        .zyx .title .current,
+        .title span:hover {
+            color: #3983e5;
+        }
+
+        .zyx .title .current {
+            cursor: default;
+        }
+
+        .zyx .title .current i {
+            display: inline-block;
+        }
+
+        .zyx .title i {
+            position: absolute;
+            left: 50%;
+            margin-left: -6px;
+            bottom: 3px;
+            display: none;
+            border-bottom: 6px solid #3983e5;
+            border-top: 0 none;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+        }
+
+        .zyx .label-en {
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            display: inline-block;
+            background-color: orange;
+            color: #fff;
+            font-weight: normal;
+            padding: 0 2px;
+            font-size: 8px;
+            line-height: 16px;
+
+        }
+
+        .zyx .triangle {
+            position: absolute;
+            z-index: 1;
+            top: 17px;
+            right: 0;
+            display: inline-block;
+            border-width: 3px;
+            border-style: solid;
+            border-color:orange transparent transparent orange;
+        }
+          
+    </style>
+</head>
+<body>
+        <div class="zyx">
+                <h2 class="title">
+                    <span class="current">
+                        海外酒店
+                        <i></i>
+                    </span>
+                    <span>
+                        海外民宿+短租
+                    </span>
+                    <span>
+                        团购
+                        <i></i>
+                        <b class="label-en">
+                            <em>new</em>
+                            <em class="triangle"></em>
+                        </b>
+                    </span>
+                    <span>
+                        国内的酒店
+                    </span>
+                </h2>
+        
+            </div>
+  
+</body>
+</html>
